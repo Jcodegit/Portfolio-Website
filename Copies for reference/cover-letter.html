@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter</title>
+    <link rel="stylesheet" href="Style/master.css">
+</head>
+<body>
+    <header>
+        <h1>Cover Letter</h1>
+        <hr>
+        <nav>
+            <a href="resume.html">Resume</a> |
+            <a href="career-goals.html">Career Goals</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <p><strong>James Worrell</strong><br>
+                <a href="mailto:jworre10@wgu.edu"><em>jworre10@wgu.edu</em></a></p>
+                <p><mark id="currentDate"></mark></p>
+                
+                <p>Dear Hiring Manager,</p>
+
+                <p>I am excited to apply for a <mark>Junior Cybersecurity Analyst</mark> position at Aegis Digital Security, where I will be able to apply my technical founation and problem-solving mindset to protect organizational assets. My certifications in <strong>CompTIA A+</strong>, <strong>Network+</strong>, and <strong>Security+</strong>, as well as my knowledge of web development and web applications gained at <em>Western Governors University</em>, have prepared me to <span>identify vulnerabilites, monitor systems, and support secure IT operations.</span></p>
+
+                <p>Beyond academic experience, I engage in continuous hands-on learning through platforms like Hack the Box, where I practice ethical hacking techniques, and real-world security analysis. I am committed to continuous learning and skill building and am ready to contribute in a professional cybersecurity setting.</p>
+
+                <p>Sincerely,<br>
+                <strong>James</strong></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 James Worrell | <span><a href="resume.html">Resume</a></span></p>
+    </footer>
+    <script>
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("currentDate").textContent = today.toLocaleDateString(undefined, options);
+    </script>
+</body>
+</html>

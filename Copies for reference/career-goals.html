@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/master.css">
+    <title>Career Goals</title>
+</head>
+<body>
+    <header>
+        <h1>Career Goals</h1>
+        <p>My goal is to build a successful career in information technology with a focus on <strong>cybersecurity and automation</strong>. I would like to defend systems and organizations while designing solutions that make technology more secure and efficient. As I continue earning certifications and finishing my degree at <em>Western Governors University</em>, I'm developing the hands-on skills needed to identify vulnerabilities, ensure the security of infrastructure, and create a safer digital world.</p>
+    </header>
+    <hr>
+    <nav>
+        <a href="resume.html">Resume</a> |
+        <a href="cover-letter.html">Cover Letter</a>
+    </nav>
+
+    <main>
+    <section>
+
+        <h3 class="sectionHeader">Contact Me:</h3>
+
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <div class="form-container">
+
+                <!-- LEFT SIDE -->
+                <div class="form-column">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="company">Company name</label>
+                    <input type="text" id="company" name="company">
+                    <label for="myEmail">Email Address:</label>
+                    <input type="email" name="myEmail" id="myEmail">
+                    <label for="phone">Phone:<label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" name="birthdate" id="birthdate"><br><br>
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" name="contactTime" id="contactTimeAny" value="any"><label for="contactTimeAny">Anytime</label><br>
+                        <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">AM</label><br>
+                        <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimePM">PM</label><br>
+                        <input type="radio" name="contactTime" id="contactTimeSpecific" value="specific"><label for="contactTimeSpecific">Specific:</label>
+                        <input type="time" name="specificTime" id="specificTime">
+                    </fieldset>
+                </div>
+                <!-- RIGHT SIDE -->
+                <div class="form-column">
+                    <label for="mySelect">Preferred Contact Method</label>
+                    <select name="mySelect" id="mySelect" multiple size="3">
+                        <option value="1">Phone</option>
+                        <option value="2">Email</option>
+                        <option value="3">Text</option>
+                    </select>
+                    <label for="myTA">Message:</label>
+                    <textarea name="myTA" id="myTA" cols="20" rows="4"></textarea>
+                    <label for="myFile">File Upload:</label>
+                    <input type="file" name="myFile" id="myFile">
+                </div>
+            </div>
+            <div class="form-buttons">
+                <input type="reset" name="resetBtn" id="resetBtn" value="RESET FORM">
+                <input type="submit" name="submitBtn" id="submitBtn" value="SUBMIT FORM">
+            </div>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 James Worrell | <a href="resume.html"><span>Resume</span></a></p>
+    </footer>
+    <section>
+        <h3 class="sectionHeader">Multimedia</h3>
+        <audio src="multimedia/mozart-sample.mp3" controls>
+            Your browser does not support mp3
+        </audio>
+        <p>Below are some of my Arduino projects that demonstrate my curiosity for embedded systems, technical expertise, and passion for growth in technology. One is a sensor that detects the moisture level in soil, so you know when your plant needs water, and the other is an RFID Access Control System, the technology in badge readers common in the workplace.</p>
+        <h3 class="sectionHeader">Arduino Soil Moisture Sensor</h3>
+            <img src="multimedia/SoilMoisture1.jpg" alt="Arduino Soil Moisture Sensor" width="450"><br>
+            <img src="multimedia/SoilMoisture2.jpg" alt="Arduino Soil Moisture Sensor" width="450"><br>
+            <img src="multimedia/SoilMoisture3.jpg" alt="Arduino Soil Moisture Sensor" width="450"><br>
+            <img src="multimedia/SoilMoisture4.jpg" alt="Arduino Soil Moisture Sensor" width="450"><br>
+            <hr>
+            <h3 class="sectionHeader">Arduino RFID Access Control System</h3>
+            <video src="multimedia/RFID Access Control System.mp4" controls style="width:70%;">
+                Your browser does not support mp4</video>
+
+            <img src="multimedia/RFID1.jpg" alt="Arduino RFID Access Control System" width="450"><br>
+            <img src="multimedia/RFID2.jpg" alt="Arduino RFID Access Control System" width="450"><br>
+            <img src="multimedia/RFID3.jpg" alt="Arduino RFID Access Control System" width="450"><br>
+            <img src="multimedia/RFID4.jpg" alt="Arduino RFID Access Control System" width="450">
+    </section>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* MOBILE-FIRST BASE STYLES */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #DADDE0;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.section {
+  padding: 2rem 1.25rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.intro-video {
+  width: 100%;
+  margin-top: -1rem;
+  border-radius: 0.75rem;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-grid span {
+  background: #e2e8f0;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.skills-grid span:hover {
+  transform: scale(1.05);
+  background: #cbd5f5;
+}
+
+
+/* PROJECT CARDS */
+.project-card {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-images img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-images img {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+}
+
+/* CERTIFICATIONS */
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-list li {
+  background: #e2e8f0;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.badge-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.badge-scroll img {
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+
+
+/* ---- DESKTOP BREAKPOINT ---- */
+@media (min-width: 700px) {
+  body {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
