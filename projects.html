@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Michael featuring systems administration and infrastructure work.">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Michael | Projects</title>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Project Portfolio</p>
+      <h1>Hands-On IT Projects</h1>
+      <p class="subtitle">
+        Real-world labs focused on identity management, networking, and support workflows.
+      </p>
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="projects">
+      <h2>Featured Projects</h2>
+      <article class="project-card">
+        <h3>Active Directory Homelab</h3>
+        <p>
+          Built a virtual enterprise environment using Windows Server to model real-world identity and access
+          management. I configured Active Directory Domain Services, DNS, organizational units, and shared resources,
+          then validated role-based access from a domain-joined client.
+        </p>
+        <video controls preload="metadata">
+          <source src="Windows Server/HomepageSummaryVideo.mp4" type="video/mp4">
+          Your browser does not support this video tag.
+        </video>
+        <div class="project-images">
+          <a href="Windows Server/New OU Creation.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/New OU Creation.png" alt="Creating organizational units in Active Directory"></a>
+          <a href="Windows Server/DNS Forwarder created.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/DNS Forwarder created.png" alt="Configured DNS forwarder on domain controller"></a>
+          <a href="Windows Server/MappedNetworkDrive.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/MappedNetworkDrive.png" alt="Mapped network drive from client machine"></a>
+          <a href="Windows Server/VolumeShadowCopyonC.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/VolumeShadowCopyonC.png" alt="Volume shadow copy settings on C drive"></a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>System Information Dashboard (Python)</h3>
+        <p>
+          Built a Python utility that collects and displays key system metrics in a dashboard-style output, including
+          OS details, uptime, CPU utilization, RAM usage, disk usage, active user, and network information. The script
+          uses `psutil`, `platform`, `socket`, and `shutil` to present practical host-level diagnostics for support and
+          troubleshooting workflows.
+        </p>
+        <div class="project-images">
+          <a href="System Information Dashboard/SysinfodashboardDemo.png" target="_blank" rel="noopener noreferrer">
+            <img class="project-image-full" src="System Information Dashboard/SysinfodashboardDemo.png" alt="Screenshot of Python system information dashboard">
+          </a>
+        </div>
+        <p>
+          <a class="btn" href="https://github.com/Jcodegit/System-Information-Dashboard" target="_blank" rel="noopener noreferrer">View Python Source</a>
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Arduino RFID Access Control System (C/C++)</h3>
+        <p>
+          Built a physical access-control prototype using Arduino and an RC522 RFID module with C/C++.
+          The system validates card IDs and provides real-time visual feedback for authorization state:
+          prompt to scan, access denied, and access granted.
+        </p>
+        <video controls preload="metadata">
+          <source src="multimedia/RFID%20Access%20Control%20System.mp4" type="video/mp4">
+          Your browser does not support this video tag.
+        </video>
+        <div class="project-images">
+          <a href="multimedia/RFID1.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="multimedia/RFID1.jpg" alt="RFID setup with RC522 module and display waiting for card scan">
+          </a>
+          <a href="multimedia/RFID2.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="multimedia/RFID2.jpg" alt="RFID access control showing denied status">
+          </a>
+          <a href="multimedia/RFID3.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="multimedia/RFID3.jpg" alt="RFID access control showing granted status with card present">
+          </a>
+          <a href="multimedia/RFID4.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="multimedia/RFID4.jpg" alt="Close-up of access granted message on display">
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Michael. Built with HTML and CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
