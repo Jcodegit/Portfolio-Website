@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Michael, an IT professional focused on systems, cybersecurity, and automation projects.">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Michael | IT Portfolio</title>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">James's Portfolio</p>
+      <h1>IT Professional Focused on Security, Systems, and Automation</h1>
+      <p class="subtitle">
+        Recent WGU IT graduate building practical, job-ready projects in systems administration and infrastructure.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a recent graduate with a Bachelor of Science in Information Technology from WGU. I am especially interested in system administration, cybersecurity, and automation, and I enjoy building practical projects that mirror real-world IT environments. I am helpdesk ready, with a strong foundation in troubleshooting, networking, and system support, and I am prepared to assist users and resolve common technical issues in a support environment.
+      </p>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <span>Windows Server</span>
+        <span>Active Directory</span>
+        <span>DNS / DHCP</span>
+        <span>Networking</span>
+        <span>Linux</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>HTML / CSS</span>
+        <span>SQL</span>
+        <span>Troubleshooting</span>
+        <span>Office 365</span>
+        <span>AWS</span>
+        <span>ServiceNow</span>
+        <span>Bash/Powershell</span>
+        <span>Customer Service</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Featured Project</h2>
+      <article class="project-card">
+        <h3>Active Directory Homelab</h3>
+        <p>
+          Built a virtual enterprise environment using Windows Server to model real-world identity and access
+          management. I configured Active Directory Domain Services, DNS, organizational units, and shared resources,
+          then validated role-based access from a domain-joined client.
+        </p>
+        <video controls preload="metadata">
+          <source src="Windows Server/HomepageSummaryVideo.mp4" type="video/mp4">
+          Your browser does not support this video tag.
+        </video>
+        <div class="project-images">
+          <a href="Windows Server/New OU Creation.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/New OU Creation.png" alt="Creating organizational units in Active Directory"></a>
+          <a href="Windows Server/DNS Forwarder created.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/DNS Forwarder created.png" alt="Configured DNS forwarder on domain controller"></a>
+          <a href="Windows Server/MappedNetworkDrive.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/MappedNetworkDrive.png" alt="Mapped network drive from client machine"></a>
+          <a href="Windows Server/VolumeShadowCopyonC.png" target="_blank" rel="noopener noreferrer"><img src="Windows Server/VolumeShadowCopyonC.png" alt="Volume shadow copy settings on C drive"></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Reach out to discuss IT support, system administration, or entry-level security roles.</p>
+      <p>Email: <a href="mailto:michaelw122323@gmail.com">michaelw122323@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Michael. Built with HTML and CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
