@@ -226,6 +226,27 @@ h3 {
   background: #f8fafc;
 }
 
+.project-images-single {
+  display: block;
+  overflow-x: visible;
+  padding-bottom: 0;
+  scroll-snap-type: none;
+}
+
+.project-images-single a {
+  width: 100%;
+  display: block;
+}
+
+.project-images-single img.project-image-full {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  max-height: none;
+  background: #f8fafc;
+}
+
 .cert-scroll {
   margin-top: 1rem;
   display: flex;
